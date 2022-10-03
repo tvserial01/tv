@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {font-family: sans-serif;
+
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ECE9E6, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ECE9E6, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+a, a:link {color:#2A4097; text-decoration: underline;}
+a:hover{color:#428bca;}
+a:focus{color:#428bca;text-decoration:underline;}
+.wrap {}
+h1,h2,h3,h4,h5,h6 {font-family: sans-serif; font-weight:normal}
+.maincontent {margin:0; padding:0}
+header {margin:20px 0; padding:0; text-align:center}
+
+/*achtergrondkleur + h1txt kleur aanpassen*/
+header h1 {margin:0; display: inline-table; font-size:24px;  font-family: 'Bitter', serif; text-align:center; font-weight:bold;  text-decoration:none;  color: #fff; background:#2A4097; -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; padding:5px 16px; text-transform: uppercase;}
+
+.itlivecc {text-align:center; padding:10px 10px; font-size:20px; font-family:'Bitter', serif; font-weight:bold; color:#2A4097}
+.tdtnb {margin:0; padding:0}
+.tdtnb img.bigpict {width:320px; height:240px; max-height:100%; max-width:100%}
+.tdtnb a img.bigpict {border:none; margin:7.5px auto}
+.tdtnb a img.bigpict:hover {border-color:#2A4097;}
+/*achtergrondkleur modelblok bottom link*/
+.nichbox {float:right; margin:20px 0}
+.nichboxl {margin:20px 0}
+.dropdown-menu > li > a {font-size:12px }
+.btn-cat {color: #fff; background-color: #AC4DB3;border-color: #78217F;}
+.btn-cat:hover,.btn-cat:focus,.btn-cat:active,.btn-cat.active,.open .dropdown-toggle.btn-cat { color: #fff;background-color: #933599; border-color: #933599;}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus {background-color: #933599;}
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus {background-color: #933599;}
+
+/* response start */
+@media (min-width: 768px)   {
+.tdtnb img.bigpict {width: 100%; height:170px}
+.maincontent .row .col-sm-4 {}
+}
+@media (min-width: 992px) {
+.tdtnb img.bigpict {height:110px}
+}
+@media (min-width: 1200px) {
+.container {}
+.tdtnb img.bigpict {height:131px;}
+}
+@media (min-width: 1300px) {
+.tdtnb img.bigpict {height:131px;}
+}
+@media (max-width: 767px) {
+.tdtnb img.bigpict {height:240px; width:100%}
+.nichbox {float: none; text-align:center; margin:0 0 20px;}
+.nichbox .pull-right {float:none !important}
+.nichboxl {text-align:center; margin:20px 0 0;}
+.dropdown-menu > li > a {text-align: left}
+.pull-right > .dropdown-menu {right: auto; left: auto;}
+header h1 {font-size:23px}
+.itlivecc {font-size:20px}
+}
+@media (max-width: 600px) {
+.tdtnb img.bigpict {height:200px; width:100%}
+header h1 {font-size:20px}
+.itlivecc {font-size:18px}
+}
+@media (max-width: 599px) {
+.tdtnb img.bigpict {height:190px; max-height:100%; max-width:100%}
+}
+@media (max-width: 499px) {
+.tdtnb img.bigpict {height:160px; max-height:100%; max-width:100%}
+}
+@media (max-width: 399px) {
+.tdtnb img.bigpict {height:125px; max-height:100%; max-width:100%}
+}
+@media (max-width: 320px) {
+.maincontent .row .col-xs-6 {float:none; width:100%}
+.tdtnb img.bigpict {width:100%; height:220px; }
+header h1 {font-size:18px}
+.itlivecc {font-size:16px}
+}
+.menu {line-height:24px; padding-left:0px; margin-bottom:0px; text-align:center}
+.menu2 {line-height:24px; font-weight:600; padding-left:0px; margin-bottom:0px; text-align:center}
+.footer {clear: both;padding-top:0px;text-align:center;height:auto;z-index:0; line-height:25px;}
+.footer h2 {font-family: 'Bitter', serif; font-size:24px; font-weight:bold}
+
+@media screen and (max-width: 468px) {
+.menu {display:none}
+}
+@media screen and (min-width: 468px) {
+.menu2 {display:none}
+}
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+text-decoration: none;
+color: #2A4097;
+font-size: medium;
+font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+}
+
+#navcontainer ul li a:hover
+{
+color: #428bca;
+}
+
+#navcontainer li:not(:first-child):before {
+    content: " - ";
+}
