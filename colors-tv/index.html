@@ -1,1 +1,31 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HLS Demo</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/1.8.2/plyr.css">
+  </head>
+  <body>
+    <video preload="none" id="player" autoplay controls crossorigin></video>
+    <script src="https://cdn.plyr.io/1.8.2/plyr.js"></script>
+    <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
+<script>
+(function () {
+  var video = document.querySelector('#player');
+
+  if (Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource('https://feisty.tvlogy.to/6m1dwuCecIyUakCevlsbVstxO_quboD2tCbhtqGYFjqCoUOWJFFC4fRERG-RAFB0qE-HPx0k-ftkDao61zHwKg/1b0rUWAi04jWxU3jMUmzfhVPSjZruCWOEE8pLUWvKpo/video.m3u8');
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+    });
+  }
+  
+  plyr.setup(video);
+})();
+</script>
+
+  </body>
+</html>
