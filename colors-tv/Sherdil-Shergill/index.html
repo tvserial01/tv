@@ -30,8 +30,12 @@
   if (Hls.isSupported()) {
     var hls = new Hls();
     hls.loadSource('https://feisty.tvlogy.to/r3gUn4QMNn9zSShF9SNWA2LcheGNfdPTUG84drdnVF5PVQuyaxExU0UU4XTome0w30ljGOi0FLIKYhZYAzn25w/-yqLZO1IXnD_ySdNJP2lLQWamtCJ_TDOvauYxD980V0/480.m3u8');
-    hls.attachMedia(video);
+   hls.attachMedia(video);
+   hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+    });
   }
+  
   plyr.setup(video);
 })();
 </script>
