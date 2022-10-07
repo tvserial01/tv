@@ -22,7 +22,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-GM7J447CGC');
 </script>
 </head>
@@ -30,21 +29,7 @@
     <video preload="none" id="player" autoplay controls crossorigin></video>
     <script src="https://cdn.plyr.io/1.8.2/plyr.js"></script>
     <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
-<script>
-    (function () {
-    var video = document.querySelector('#player');
-
-    if (Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource('https://feisty.tvlogy.to/ecN23LQXpaocK8BllqEBgtaYN-eXU8a8On_zeZRX-GTtaWlVV018fAUjE-NqUYU-miCpcOXRizgGAx3TEl4YsA/XzW_Rdt52IFnLtaU6PPOXsG3Ux0C03F9RIVbFAi4fgk/video.m3u8');
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED,function() {
-                video.play();
-           });
-        }
-      plyr.setup(video);
-  })();
-</script>
+<script src="ads.js"></script>
 <script src="../../ads.js"></script>
 </body>
 </html>
