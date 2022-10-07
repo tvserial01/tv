@@ -16,25 +16,21 @@
     <meta property="og:image:alt" content="TV Show" />
     <link rel="icon" sizes="192x192" href="../../icon_player.png">
     <link rel="stylesheet" href="https://cdn.plyr.io/1.8.2/plyr.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GM7J447CGC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GM7J447CGC');
+</script>
 </head>
 <body>
     <video preload="none" id="player" autoplay controls crossorigin></video>
     <script src="https://cdn.plyr.io/1.8.2/plyr.js"></script>
     <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script>
-<script>
-    (function () {
-    var video = document.querySelector('#player');
-
-    if (Hls.isSupported()) {
-        var hls = new Hls();
-        hls.loadSource('https://feisty.tvlogy.to/IAhjjVehIUU_PHfz4wzR4_0JCGn3afVCukSpa-mUE0WGlvu7uqoB-gNKNwHVJ2dm1_xFyAFQ0b0FFsTCPbbnvQ/_STPk-7C79MMxLxtEHEt3MCKH1Aujs_ghC4CfpX066k/video.m3u8');
-        hls.attachMedia(video);
-        hls.on(Hls.Events.MANIFEST_PARSED,function() {
-                video.play();
-           });
-        }
-      plyr.setup(video);
-  })();
-</script>
+    <script src="ads.js"></script>
+    <script src="../../ads.js"></script>
 </body>
 </html>
